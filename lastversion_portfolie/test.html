@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Animation Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="width: 100px; height: 100px; background-color: blue;"></div>
+
+    <script>
+        gsap.set(".box",{
+            x: +window.innerWidth
+        });
+        // تطبيق أنيميشن على العنصر الذي يملك الكلاس "box"
+        gsap.to(".box", {
+            x: 0,              // تحريك العنصر 50 بكسل على المحور العمودي
+          //  opacity: 0.5,         // تغيير الشفافية إلى 0
+            //backgroundColor: "red", // تغيير لون الخلفية إلى الأحمر
+            duration: 2,        // مدة الأنيميشن 2 ثانية
+            //ease: "power2.out", // استخدام تسهيل power2
+            // onComplete: function() { // دالة تستدعى عند انتهاء الأنيميشن
+            //     console.log("Animation Complete!");
+            // }
+        });
+    </script>
+</body>
+</html>
+
+
+const hamburger =document.getElementById('hamburger');
+const menu =document.getElementById('menu');
+const header=document.getElementsByTagName('header');
+hamburger.addEventListener('click',()=>{
+    if (menu.style.display !='flex' ){
+        menu.style.display='flex';
+    }else{
+        menu.style.display='none';
+    }
+});
+
+document.addEventListener('click', function(event) {
+    const isClickInsideNav = menu.contains(event.target);
+    const isClickInsideHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideNav && !isClickInsideHamburger) {
+        menu.style.display = 'none';
+    }
+});
+
+window.addEventListener('resize',()=>{
+    if(window.innerWidth>=641){
+
+        menu.style.display = 'none';
+    };
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function apir(){
+    return new Promise((resolve)=>{
+        gsap.set("#menu",{
+            y: -window.innerHeight
+        });
+        gsap.to("#menu", {
+            y: 0,
+            duration: 1,
+            ease: "power1.inout",
+        });
+        resolve(); 
+    })
+};
+
+function disapir(){
+    return new Promise((resolve)=>{
+        gsap.set("#menu",{
+            y: 0
+        });
+        gsap.to("#menu", {
+            y: -window.innerWidth,
+            duration: 1,
+            ease: "power1.inout",
+        });
+        console.log('1');
+        resolve();
+        console.log('2');
+    })
+}
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('click', function(event) {
+    const isClickInsideNav = menu.contains(event.target);
+    const isClickInsideHamburger = hamburger.contains(event.target);
+
+    if (!isClickInsideNav && !isClickInsideHamburger) {
+        async function dis(){
+            console.log('start animation');
+            await disapir()
+            console.log('fin animation');
+        };
+        dis();
+    }
+});

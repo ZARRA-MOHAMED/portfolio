@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("8EdFQHeJqlIHC2V3z");
+    })();
+    </script>
+</head>
+<body>
+    <form id="contact-form">
+        <label for="name">Name :</label>
+        <br>
+        <input type="text" id="name" name="name" required placeholder="first name + last name">
+        <br>
+        
+        <label for="email">Email :</label>
+        <br>
+        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+        <br>
+        
+        <label for="message">Message :</label>
+        <br>
+        <textarea id="message" name="message"></textarea>
+        <br>
+        
+        <button id="send" type="submit">
+            <i class="fa-solid fa-paper-plane fa-lg" style="padding-right: 7px;"></i>
+            Send
+        </button> 
+    </form>
+
+    <script>
+    document.getElementById("contact-form").addEventListener("submit", function(event){
+        event.preventDefault();
+        sendMail();
+    });
+
+    function sendMail(){
+        let params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("service_03s2rwk", "template_r5scvgn", params)
+            .then(function(response) {
+                alert("Your email has been sent!");
+            }, function(error) {
+                alert("Failed to send email. Please try again later.");
+            });
+    }
+    </script>
+</body>
+</html>
