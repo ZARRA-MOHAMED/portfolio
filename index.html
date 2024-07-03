@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/icons/zarra logo.png" type="image/png">
+    <title>ZARRA | portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intersection-observer/0.7.0/intersection-observer.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "8EdFQHeJqlIHC2V3z",
+        });
+    })();
+    </script>
+    <script src="email.js"></script>
+</head>
+<body>
+    <header>
+        <a class="anime a1" href="#home"><img src="icons/logo.png" alt="zarra logo" data-animation="true"></a>
+        <nav class="anime a2" id="nab_bar">
+            <a href="#about_me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+        <div class="cont anime a3">
+            <a href="#contact">Contact me</a>
+        </div>
+        <div class="hamburger anime a3" id="hamburger">
+            &#9776;
+        </div>
+    </header>
+    <div id="menu">
+        <a href="#about_me">About Me</a>
+        <hr>
+        <a href="#skills">Skills</a>
+        <hr>
+        <a href="#projects">Projects</a>
+        <hr>
+        <a href="#contact">Contact me</a>
+    </div>
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+    <section id="home" class="main">
+        <div>
+            <h2>
+                Hi There! I'm <span id="special">ZARRA MOHAMED</span>
+                <br>
+                <span id="yoyo">Full Stack Devoloper</span>
+            </h2>
+            <h3>Make Your Business Digital</h3>
+            <a class="main_bottum" href="#projects">View My Work</a>
+            <div class="social_media">
+                <a href="https://github.com/ZARRA-MOHAMED"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mohamed-zarra-804098294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/MED_ZARRA"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/med.zarra/?utm_source=qr"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+    <section id="about_me" class="about_me">
+        <h2 class="title">About Me</h2>
+        <div class="content">
+            <div class="card">
+                <div class="info">
+                    <h3>LET ME INTRODUCE MYSELF</h3>
+                    <p>
+                        Since my childhood, I have been passionate about computers and technology. 
+                        Over the years, I started learning new things about computers. 
+                        When I first heard about programming, I fell in love with it. 
+                        That's where my journey began.
+                        <br><br><br>
+                        I have learned HTML, CSS, and MySQL. 
+                        I'm still a beginner in Python, Bootstrap, JavaScript, and PHP. 
+                        I am currently in the process of learning React, MongoDB, Express.js, Node.js, and Laravel. 
+                        Whenever possible, I apply my passion by developing simple projects with 
+                        Python or exploring the latest technologies in this field.                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+    <section class="skills" id="skills">
+        <h2 class="title">Skills & tools</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/html5.png" alt="HTML 5 LOGO">
+                </div>
+                <div class="info">
+                    <p>HTML 5</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/css3.png" alt="CSS 3 LOGO">
+                </div>
+                <div class="info">
+                    <p>CSS 3</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/javascript.png" alt="JavaScript LOGO">
+                </div>
+                <div class="info">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/python.png" alt="Python LOGO">
+                </div>
+                <div class="info">
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/php.png" alt="PHP LOGO">
+                </div>
+                <div class="info">
+                    <p>PHP</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/mysql.png" alt="MySQL LOGO">
+                </div>
+                <div class="info">
+                    <p>MySQL</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/bootstrap5.png" alt="Bootstrap 5 LOGO">
+                </div>
+                <div class="info">
+                    <p>Bootstrap 5</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/jquery.png" alt="JQuery LOGO">
+                </div>
+                <div class="info">
+                    <p>JQuery</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/github.png" alt="Git hub LOGO">
+                </div>
+                <div class="info">
+                    <p>Git hub</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/workbench.png" alt="workbench LOGO">
+                </div>
+                <div class="info">
+                    <p>workbench</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/xampp.png" alt="Xampp LOGO">
+                </div>
+                <div class="info">
+                    <p>Xampp</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="icons/vscode.png" alt="VSCode LOGO">
+                </div>
+                <div class="info">
+                    <p>VSCode</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+    <section id="projects">
+        <h2 class="title">Projects</h2>
+        <main class="projects">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="image/tableau.png" alt="Image 1"></div>
+                    <div class="slide"><img src="image/jacket.png" alt="Image 2"></div>
+                    <div class="slide"><img src="image/page.png" alt="Image 3"></div>
+                    <div class="slide"><img src="image/grid.png" alt="Image 4"></div>
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </main>
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+</section>
+    <section id="contact" class="contact">
+        <h2 class="title">contact me</h2>
+        <div class="content">
+            <div class="cont_info">
+                <h3>Let's work together</h3>
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-phone fa-lg" style="color: #007bff88;"></i></td>
+                        <td><p><span>Phone </span>:+212615279196</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot fa-lg" style="color: #007bff88;"></i></td>
+                        <td><p><span>Address </span>:Hay el Nahda Foum Zguid Tata, Morocco</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-envelope fa-lg" style="color: #007bff88;"></i></td>
+                        <td><p><span>Email </span>:zarra.mohamed.pro@gmail.com</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sent_mess">
+                <table>
+                <form  onsubmit="return sendMail(event)">
+                    <tr>
+                        <label for="name">Name :</label>
+                    <br>
+                    <input type="text" id="name" name="name" required placeholder="first name + last name">
+                    </tr>
+                    <br>
+                    <tr>
+                        <label for="email">Email :</label>
+                    <br>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                    </tr>
+                    
+                    <br>
+                    <tr>
+                      <label for="message">Message :</label>
+                    <br>
+                    <textarea name="message" id="message" ></textarea>  
+                    </tr>
+                    
+                    <br>
+                    <tr>
+                        <button id="send" type="submit">
+                            <i class="fa-solid fa-paper-plane fa-lg" style="padding-right: 7px;"></i>
+                            send
+                        </button>                        
+                    </tr>
+                </form>                    
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+    <footer class="footer">
+        <p class="footer-title">Made with 🔥 by <span>ZARRA MOHAMED</span></p>
+        <div class="social-icons">
+            <a href="https://github.com/ZARRA-MOHAMED"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mohamed-zarra-804098294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/MED_ZARRA"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/med.zarra/?utm_source=qr"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <script src="main.js"></script>
+    <script src="animation.js"></script>
+</body>
+</html>
